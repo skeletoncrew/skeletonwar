@@ -6,17 +6,19 @@
 #include "SkeleUtilityFunctionLibrary.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
-class USkeleUtilityFunctionLibrary : public UBlueprintFunctionLibrary
-{
-	GENERATED_UCLASS_BODY()
-	
-    UFUNCTION(BlueprintCallable, BlueprintPure, Category = SkeleFunctionLibrary )
-    static FString GetCurrentMapReference(AActor* sourceActor);
-	
-	
+class USkeleUtilityFunctionLibrary : public UBlueprintFunctionLibrary {
+    GENERATED_UCLASS_BODY()
+
+        UFUNCTION(BlueprintCallable, BlueprintPure, Category = SkeleFunctionLibrary)
+        static FString GetCurrentMapReference(AActor* sourceActor);
+
+
+    UFUNCTION(BlueprintCallable, BlueprintPure, Category = SkeleFunctionLibrary)
+        static TArray<FString> GetDefaultPlayerNamesFromFile();
+
 };
 
 
