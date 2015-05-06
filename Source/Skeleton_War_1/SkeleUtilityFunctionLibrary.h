@@ -16,7 +16,7 @@ class USkeleUtilityFunctionLibrary : public UBlueprintFunctionLibrary {
         static FString GetCurrentMapReference(AActor* sourceActor);
 
 
-    UFUNCTION(BlueprintCallable, BlueprintPure, Category = SkeleFunctionLibrary)
+    UFUNCTION(BlueprintCallable, Category = SkeleFunctionLibrary)
         static TArray<FString> GetDefaultPlayerNamesFromFile();
 
 };
