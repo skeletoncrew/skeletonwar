@@ -27,8 +27,8 @@ TArray<FString> USkeleUtilityFunctionLibrary::GetDefaultPlayerNamesFromFile() {
     FString fileContents = "";
     FFileHelper::LoadFileToString(fileContents, *filePath);
 
-    TArray<FString> lines;
-    int32 lineCount = fileContents.ParseIntoArray(&lines, _T("\n"), true);
+    TArray<FString> items;
+    int32 itemCount = fileContents.ParseIntoArray(&items, _T(","), true);
 
-    return lines;
+    return items;
 }
