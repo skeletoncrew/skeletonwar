@@ -2,7 +2,6 @@
 
 #include "Skeleton_War_1.h"
 #include "SkeleUtilityFunctionLibrary.h"
-#include <vector>
 
 // Constructor
 USkeleUtilityFunctionLibrary::USkeleUtilityFunctionLibrary(const class FPostConstructInitializeProperties& PCIP)
