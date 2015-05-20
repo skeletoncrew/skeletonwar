@@ -31,3 +31,17 @@ TArray<FString> USkeleUtilityFunctionLibrary::GetDefaultPlayerNamesFromFile() {
 
     return items;
 }
+
+
+TArray<int32> USkeleUtilityFunctionLibrary::SortPlayerScores(TArray<int32> scores) {
+    TArray<int32> indices;
+
+    while (indices.Num() < scores.Num()) {
+        int32 index;
+        FMath::Max<int32>(scores, &index);
+        indices.Add(index);
+        scores[index] = MININT32;
+    }
+
+    return indices;
+}
